@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head></head>
+    <body>
+        <link rel="stylesheet" href="style.css">
+        <h2 class="Title">San pham ua chuong</h2>
+        <div class="SSS">
+        <button class="Click1">Hang moi ve</button>
+        <button class="Click2" id="monthButton"></button>
+        </div>
+        <script>
+            const currentDate = new Date()
+            const currentMonth = currentDate.getMonth() + 1
+            document.getElementById("monthButton").textContent = 'Outline thang ' + currentMonth
+        </script>
+
+
+        <div class="content">
+        <a href=""><div class="Product1">
+            <img src="./Img/1.webp" alt="">
+            <p>Ao phao nam tran nam dep giau khoa</p>
+            <h4 id="price1"><script>
+                const price1 = 664.050
+                document.getElementById("price1").textContent = price1
+            </script> d</h4>
+        </div></a>
+
+        <a href=""><div class="Product2">
+            <img src="./Img/2.webp" alt="">
+            <p>T-Shirt nu dang suong</p>
+            <h4 id="price2"><script>
+                const price2 = 664.050
+                document.getElementById("price2").textContent = price2
+            </script> d</h4>
+        </div></a>
+
+        <a href=""><div class="Product3">
+            <img src="./Img/3.webp" alt="">
+            <p>Ao phao nam tran nam dep giau khoa</p>
+            <h4 id="price3"><script>
+                const price3 = 664.050
+                document.getElementById("price3").textContent = price3
+            </script> d</h4>
+        </div></a>
+
+        <a href=""><div class="Product4">
+            <img src="./Img/4.webp" alt="">
+            <p>Ao phao nam tran nam dep giau khoa</p>
+            <h4 id="price4"><script>
+                const price4 = 664.050
+                document.getElementById("price4").textContent = price4
+            </script> d</h4>
+        </div></a>
+    </div>
+    </body>
+</html>

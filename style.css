@@ -1,0 +1,58 @@
+
+.Title {
+    text-align: center;
+}
+
+.SSS {
+    text-align: center;       /* Căn giữa nội dung trong div */
+    padding: 20px;            /* Khoảng cách bên trong div */
+    background-color: #ffffff; /* Màu nền div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    border-radius: 10px;      /* Bo góc nhẹ */
+}
+
+/* Căn chỉnh và định dạng bố cục tổng thể */
+.content {
+    display: flex;            /* Hiển thị các sản phẩm theo hàng ngang */
+    flex-wrap: wrap;          /* Nếu màn hình nhỏ, các sản phẩm sẽ xuống hàng */
+    gap: 20px;                /* Khoảng cách giữa các sản phẩm */
+    justify-content: center;  /* Căn giữa các sản phẩm */
+    padding: 20px;
+}
+
+/* Định dạng chung cho từng sản phẩm */
+.Product1, .Product2, .Product3, .Product4 {
+    text-align: center;       /* Căn giữa nội dung bên trong sản phẩm */
+    width: 200px;             /* Đặt chiều rộng cố định cho sản phẩm */
+    padding: 10px;            /* Thêm khoảng cách bên trong sản phẩm */
+    border-radius: 10px;      /* Bo góc sản phẩm */
+    background-color: #fff;   /* Nền trắng */
+}
+
+/* Định dạng hình ảnh */
+.Product1 img, 
+.Product2 img, 
+.Product3 img, 
+.Product4 img {
+    width: 100%;              /* Hình ảnh chiếm toàn bộ chiều rộng sản phẩm */
+    height: auto;             /* Tự động điều chỉnh chiều cao để không bị méo */
+    border-radius: 8px;       /* Bo góc hình ảnh */
+    object-fit: cover;        /* Cắt hình ảnh vừa khung nếu cần */
+}
+
+/* Định dạng văn bản */
+.Product1 p, .Product2 p, .Product3 p, .Product4 p {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.Product1 h4, .Product2 h4, .Product3 h4, .Product4 h4 {
+    font-size: 16px;
+    color: #007bff;
+}
+
+
+
+
+
