@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Long Sleeve Women's Shirt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media (min-width: 768px) {
+            .product-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .main-image {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .thumbnail {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .product-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .star {
+            color: gold;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: #666;
+        }
+        .discount {
+            background-color: #ffebee;
+            color: #d32f2f;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .color-options, .size-options {
+            display: flex;
+            gap: 10px;
+        }
+        .color-option {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            cursor: pointer;
+        }
+        .color-option.selected {
+            border-color: #1a73e8;
+        }
+        .size-option {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .size-option.selected {
+            background-color: #1a73e8;
+            color: white;
+        }
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .quantity-btn {
+            width: 32px;
+            height: 32px;
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .add-to-cart, .buy-now {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .add-to-cart {
+            background-color: #1a73e8;
+            color: white;
+        }
+        .buy-now {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .info-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .order-summary {
+            margin-top: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .summary-item.discount {
+            color: #e53935;
+        }
+        .summary-item.total {
+            font-weight: bold;
+            font-size: 18px;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        .savings {
+            color: #e53935;
+            margin-bottom: 15px;
+        }
+        .purchase-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ffa000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        .voucher-info {
+            color: #4caf50;
+            margin-bottom: 15px;
+        }
+        .payment-methods {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .payment-methods img {
+            height: 30px;
+            object-fit: contain;
+        }
+        .security-info {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-grid">
+            <div class="image-gallery">
+                <img src="https://via.placeholder.com/500" alt="Basic Long Sleeve Shirt" class="main-image">
+                <div class="thumbnail-grid">
+                    <img src="https://via.placeholder.com/100" alt="Product view 1" class="thumbnail">
+                    <img src="https://via.placeholder.com/100" alt="Product view 2" class="thumbnail">
+                    <img src="https://via.placeholder.com/100" alt="Product view 3" class="thumbnail">
+                    <img src="https://via.placeholder.com/100" alt="Product view 4" class="thumbnail">
+                </div>
+            </div>
+            <div class="product-details">
+                <div>
+                    <h1>Basic Long Sleeve Women's Shirt</h1>
+                    <div>
+                        <span class="star">★★★★★</span>
+                        <span>4.8 (120 reviews)</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="price">379,050đ</div>
+                    <div class="original-price">399,000đ</div>
+                    <span class="discount">-5%</span>
+                </div>
+                <div>
+                    <label>Color</label>
+                    <div class="color-options">
+                        <div class="color-option selected" style="background-color: #FFFFFF;" onclick="selectColor(this, 'white')"></div>
+                        <div class="color-option" style="background-color: #8B4513;" onclick="selectColor(this, 'brown')"></div>
+                        <div class="color-option" style="background-color: #000080;" onclick="selectColor(this, 'navy')"></div>
+                        <div class="color-option" style="background-color: #000000;" onclick="selectColor(this, 'black')"></div>
+                    </div>
+                </div>
+                <div>
+                    <label>Size</label>
+                    <div class="size-options">
+                        <button class="size-option selected" onclick="selectSize(this)">S</button>
+                        <button class="size-option" onclick="selectSize(this)">M</button>
+                        <button class="size-option" onclick="selectSize(this)">L</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Quantity</label>
+                    <div class="quantity-control">
+                        <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                        <span id="quantity">1</span>
+                        <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                    </div>
+                </div>
+                <div>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <div class="info-card">
+                    <div>
+                        <strong>Free Shipping:</strong> Orders over 498k VND
+                    </div>
+                    <div>
+                        <strong>Secure Payment:</strong> Multiple payment methods available
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h2>Chi tiết đơn hàng</h2>
+                    <div class="summary-item">
+                        <span>Tổng giá trị sản phẩm</span>
+                        <span>8.718.150 đ</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Vận chuyển</span>
+                        <span>20.000 đ</span>
+                    </div>
+                    <div class="summary-item discount">
+                        <span>Giảm giá vận chuyển</span>
+                        <span>- 20.000 đ</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Tổng thanh toán</span>
+                        <span>8.718.150 đ</span>
+                    </div>
+                    <div class="savings">Bạn đã tiết kiệm được 478.850 đ</div>
+                    <button class="purchase-button">Mua hàng (23)</button>
+                    <div class="voucher-info">Chọn Voucher giảm giá ở bước tiếp theo</div>
+                    <div class="payment-methods">
+                        <img src="path_to_zalopay_logo.png" alt="ZaloPay">
+                        <img src="path_to_visa_logo.png" alt="Visa">
+                        <img src="path_to_mastercard_logo.png" alt="Mastercard">
+                        <img src="path_to_vnpay_logo.png" alt="VNPay">
+                        <img src="path_to_momo_logo.png" alt="MoMo">
+                    </div>
+                    <div class="security-info">Đảm bảo thanh toán an toàn và bảo mật</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function selectColor(element, color) {
+            document.querySelectorAll('.color-option').forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+
+        function selectSize(element) {
+            document.querySelectorAll('.size-option').forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+
+        function changeQuantity(change) {
+            let quantityElement = document.getElementById('quantity');
+            let newQuantity = parseInt(quantityElement.textContent) + change;
+            if (newQuantity >= 1) {
+                quantityElement.textContent = newQuantity;
+            }
+        }
+    </script>
+</body>
+</html>
+
