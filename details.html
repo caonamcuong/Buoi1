@@ -1,109 +1,74 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Áo Len Nữ Cổ Tròn Cơ Bản</title>
+    <title>Basic T-Shirt Product Page</title>
     <link rel="stylesheet" href="details.css">
 </head>
 <body>
     <div class="container">
-        <div class="product-grid">
-            <div class="product-gallery">
-                <div class="main-image">
-                    <img src="Img\2.webp" alt="Product image" id="mainImage">
-                </div>
+        <div class="gallery">
+            <div class="thumbnails">
+                <img src="Img/T-shirt Nữ Dáng Suông _ YODY/1.webp" class="thumbnail" alt="Product thumbnail">
+                <img src="Img/T-shirt Nữ Dáng Suông _ YODY/2.webp" class="thumbnail" alt="Product thumbnail">
+                <img src="Img/T-shirt Nữ Dáng Suông _ YODY/3.webp" class="thumbnail" alt="Product thumbnail">
+                <img src="Img/T-shirt Nữ Dáng Suông _ YODY/4.webp" class="thumbnail" alt="Product thumbnail">
+                <img src="Img/T-shirt Nữ Dáng Suông _ YODY/5.webp" class="thumbnail" alt="Product thumbnail">
+                <img src="Img/T-shirt Nữ Dáng Suông _ YODY/6.webp" class="thumbnail" alt="Product thumbnail">
+            </div>
+            <img src="Img/2.webp" class="main-image" alt="Product main image">
+        </div>
 
-                <div class="thumbnail-grid">
-                    <div class="thumbnail">
-                        <img src="Img\T-shirt Nữ Dáng Suông _ YODY\1.webp" alt="Product thumbnail 1" onclick="changeImage(this)">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="Img\T-shirt Nữ Dáng Suông _ YODY\2.webp" alt="Product thumbnail 2" onclick="changeImage(this)">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="Img\T-shirt Nữ Dáng Suông _ YODY\3.webp" alt="Product thumbnail 3" onclick="changeImage(this)">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="Img\T-shirt Nữ Dáng Suông _ YODY\4.webp" alt="Product thumbnail 4" onclick="changeImage(this)">
-                    </div>
+        <div class="product-info">
+            <h1 class="product-title">Basic Long Sleeve T-Shirt</h1>
+            <div class="price">
+                379.050 đ
+                <span class="original-price">399.000 đ</span>
+                <span class="discount">-5%</span>
+            </div>
+
+            <div class="color-options">
+                <h3 class="color-title">Color: White</h3>
+                <div class="colors">
+                    <div class="color selected" style="background-color: white"></div>
+                    <div class="color" style="background-color: #4a3434"></div>
+                    <div class="color" style="background-color: #1a1a2e"></div>
+                    <div class="color" style="background-color: black"></div>
                 </div>
             </div>
 
-            <!-- Product Info -->
-            <div class="product-info">
-                <h1>Áo Len Nữ Cổ Tròn Cơ Bản</h1>
-                <div class="product-meta">
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="rating-score">4.8 (120)</span>
-                    </div>
-                    <span class="sales">Đã bán 713</span>
+            <div class="size-options">
+                <h3>Size: S</h3>
+                <div class="sizes">
+                    <div class="size selected">S</div>
+                    <div class="size">M</div>
+                    <div class="size">L</div>
                 </div>
+            </div>
 
-                <div class="product-price">
-                    <span class="current-price">379.050 đ</span>
-                    <span class="original-price">399.000 đ</span>
-                    <span class="discount-tag">-5%</span>
-                </div>
+            <div class="quantity">
+                <button class="decrease">-</button>
+                <input type="number" value="1" min="1">
+                <button class="increase">+</button>
+            </div>
 
-                <div class="product-options">
-                    <div class="color-option">
-                        <label>Màu sắc:</label>
-                        <div class="color-choices">
-                            <input type="radio" name="color" id="color-white" checked>
-                            <label for="color-white" class="color-circle white"></label>
-                            <input type="radio" name="color" id="color-brown">
-                            <label for="color-brown" class="color-circle brown"></label>
-                            <input type="radio" name="color" id="color-navy">
-                            <label for="color-navy" class="color-circle navy"></label>
-                            <input type="radio" name="color" id="color-black">
-                            <label for="color-black" class="color-circle black"></label>
-                        </div>
-                    </div>
+            <div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
 
-                    <div class="size-option">
-                        <label>Kích thước:</label>
-                        <div class="size-choices">
-                            <input type="radio" name="size" id="size-s" checked>
-                            <label for="size-s">S</label>
-                            <input type="radio" name="size" id="size-m">
-                            <label for="size-m">M</label>
-                            <input type="radio" name="size" id="size-l">
-                            <label for="size-l">L</label>
-                        </div>
-                    </div>
-
-                    <div class="quantity-option">
-                        <label>Số lượng:</label>
-                        <div class="quantity-selector">
-                            <button class="quantity-btn" onclick="updateQuantity(-1)">-</button>
-                            <span class="quantity" id="quantity">1</span>
-                            <button class="quantity-btn" onclick="updateQuantity(1)">+</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-actions">
-                    <button class="btn btn-secondary" onclick="addToCart()">Thêm vào giỏ</button>
-                    <button class="btn btn-primary" onclick="buyNow()">Mua ngay</button>
-                </div>
-
-                <div class="product-info-footer">
-                    <div class="info-item">
-                        <span class="icon">🔒</span>
-                        <span>Đảm bảo thanh toán an toàn và bảo mật</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="icon">✓</span>
-                        <span>Miễn phí vận chuyển: Đơn hàng từ 498k</span>
-                    </div>
-                </div>
+            <div class="payment-methods">
+                <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-ZaloPay-Square.png" alt="ZaloPay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="MasterCard">
+                <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Icon-VNPAY-QR.png" alt="VNPay">
+                <img src="https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png" alt="MoMo">
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 </body>
 </html>
-

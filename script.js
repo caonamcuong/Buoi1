@@ -1,45 +1,55 @@
-// Hàm để thay đổi hình ảnh chính khi nhấp vào hình thu nhỏ
-function changeImage(thumbnail) {
-    var mainImage = document.getElementById('mainImage');
-    mainImage.src = thumbnail.src;
-    mainImage.alt = thumbnail.alt;
-}
+// Color selection
+const colors = document.querySelectorAll('.color');
+colors.forEach(color => {
+    color.addEventListener('click', () => {
+        colors.forEach(c => c.classList.remove('selected'));
+        color.classList.add('selected');
+    });
+});
 
-// Hàm để cập nhật số lượng
-function updateQuantity(change) {
-    var quantityElement = document.getElementById('quantity');
-    var quantity = parseInt(quantityElement.textContent);
-    quantity = Math.max(1, quantity + change);
-    quantityElement.textContent = quantity;
-}
+// Size selection
+const sizes = document.querySelectorAll('.size');
+sizes.forEach(size => {
+    size.addEventListener('click', () => {
+        sizes.forEach(s => s.classList.remove('selected'));
+        size.classList.add('selected');
+    });
+});
 
-// Hàm để thêm sản phẩm vào giỏ hàng
-function addToCart() {
-    var quantity = document.getElementById('quantity').textContent;
-    var color = document.querySelector('input[name="color"]:checked').id.replace('color-', '');
-    var size = document.querySelector('input[name="size"]:checked').id.replace('size-', '');
-    
-    alert('Đã thêm ' + quantity + ' sản phẩm vào giỏ hàng\nMàu sắc: ' + color + '\nKích thước: ' + size.toUpperCase());
-}
+// Quantity controls
+const quantityInput = document.querySelector('.quantity input');
+const decreaseBtn = document.querySelector('.decrease');
+const increaseBtn = document.querySelector('.increase');
 
-// Hàm để tiến hành thanh toán
-function buyNow() {
-    var quantity = document.getElementById('quantity').textContent;
-    var color = document.querySelector('input[name="color"]:checked').id.replace('color-', '');
-    var size = document.querySelector('input[name="size"]:checked').id.replace('size-', '');
-    
-    alert('Đang chuyển đến trang thanh toán\nSố lượng: ' + quantity + '\nMàu sắc: ' + color + '\nKích thước: ' + size.toUpperCase());
-}
-
-// Thêm event listeners cho việc chọn màu sắc và kích thước
-document.addEventListener('DOMContentLoaded', function() {
-    var inputs = document.querySelectorAll('input[name="color"], input[name="size"]');
-    for (var i = 0; i < inputs.length; i++) {
-        inputs[i].addEventListener('change', function() {
-            var type = this.name;
-            var value = this.id.replace(type + '-', '');
-            console.log('Đã chọn ' + type + ': ' + value);
-        });
+decreaseBtn.addEventListener('click', () => {
+    const currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
     }
 });
 
+increaseBtn.addEventListener('click', () => {
+    const currentValue = parseInt(quantityInput.value);
+    quantityInput.value = currentValue + 1;
+});
+
+// Prevent invalid input
+quantityInput.addEventListener('change', () => {
+    if (quantityInput.value < 1) {
+        quantityInput.value = 1;
+    }
+});
+
+// Thumbnail click handling
+const thumbnails = document.querySelectorAll('.thumbnail');
+const mainImage = document.querySelector('.main-image');
+
+thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+        mainImage.src = thumbnail.src;
+
+        // Optional: Update active thumbnail styling
+        thumbnails.forEach(t => t.style.border = '1px solid #ddd');
+        thumbnail.style.border = '2px solid #000';
+    });
+});

@@ -3,153 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Áo Len Nữ Cổ Tròn Cơ Bản</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="cart.css">
 </head>
-<body class="bg-gray-50">
-    <div class="mx-auto max-w-7xl px-4 md:px-8 py-8">
-        <div class="grid gap-8 md:grid-cols-2">
-            <!-- Product Gallery -->
-            <div class="relative">
-                <div class="sticky top-4 grid gap-4">
-                    <div class="aspect-square overflow-hidden rounded-lg border bg-white">
-                        <img src="/placeholder.svg" alt="Product image" class="h-full w-full object-cover">
-                    </div>
-                    <div class="grid grid-cols-4 gap-4">
-                        <div class="aspect-square cursor-pointer overflow-hidden rounded-lg border bg-white">
-                            <img src="/placeholder.svg" alt="Product thumbnail 1" class="h-full w-full object-cover">
-                        </div>
-                        <div class="aspect-square cursor-pointer overflow-hidden rounded-lg border bg-white">
-                            <img src="/placeholder.svg" alt="Product thumbnail 2" class="h-full w-full object-cover">
-                        </div>
-                        <div class="aspect-square cursor-pointer overflow-hidden rounded-lg border bg-white">
-                            <img src="/placeholder.svg" alt="Product thumbnail 3" class="h-full w-full object-cover">
-                        </div>
-                        <div class="aspect-square cursor-pointer overflow-hidden rounded-lg border bg-white">
-                            <img src="/placeholder.svg" alt="Product thumbnail 4" class="h-full w-full object-cover">
-                        </div>
-                    </div>
+<body>
+    <div class="container">
+        <h1 class="cart-header">Giỏ hàng</h1>
+        
+        <div class="progress-bar">
+            <div class="fill"></div>
+        </div>
+        
+        <div class="cart-item">
+            <img src="Img/2.webp" alt="Áo Len Nữ Cổ Tròn Cơ Bản">
+            <div class="item-details">
+                <h3>Áo Len Nữ Cổ Tròn Cơ Bản</h3>
+                <div class="item-price">
+                    379.050 đ
+                    <span class="original-price">399.000 đ</span>
                 </div>
-            </div>
-            
-            <div class="grid gap-4">
-                <div>
-                    <h1 class="text-2xl font-bold">Áo Len Nữ Cổ Tròn Cơ Bản</h1>
-                    <div class="mt-2 flex items-center gap-2">
-                        <div class="flex">
-                            <svg class="h-5 w-5 fill-yellow-400" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <svg class="h-5 w-5 fill-yellow-400" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <svg class="h-5 w-5 fill-yellow-400" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <svg class="h-5 w-5 fill-yellow-400" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <svg class="h-5 w-5 fill-yellow-400" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                        </div>
-                        <span class="text-sm text-gray-500">4.8 (120)</span>
-                        <span class="text-sm text-gray-500">Đã bán 713</span>
-                    </div>
-                </div>
-
-                <div class="flex items-baseline gap-2">
-                    <span class="text-3xl font-bold text-red-600">379.050 đ</span>
-                    <span class="text-sm text-gray-500 line-through">399.000 đ</span>
-                    <span class="rounded-md bg-red-100 px-2 py-1 text-xs text-red-600">-5%</span>
-                </div>
-
-                <div class="grid gap-4">
-                    <div>
-                        <label class="text-sm font-medium">Màu sắc:</label>
-                        <div class="mt-2 flex gap-2">
-                            <div class="relative">
-                                <input type="radio" name="color" id="color-white" class="peer sr-only" checked>
-                                <label for="color-white" class="block h-8 w-8 cursor-pointer rounded-full border-2 bg-white peer-checked:border-red-600"></label>
-                            </div>
-                            <div class="relative">
-                                <input type="radio" name="color" id="color-brown" class="peer sr-only">
-                                <label for="color-brown" class="block h-8 w-8 cursor-pointer rounded-full border-2 bg-[#8B4513] peer-checked:border-red-600"></label>
-                            </div>
-                            <div class="relative">
-                                <input type="radio" name="color" id="color-navy" class="peer sr-only">
-                                <label for="color-navy" class="block h-8 w-8 cursor-pointer rounded-full border-2 bg-[#000080] peer-checked:border-red-600"></label>
-                            </div>
-                            <div class="relative">
-                                <input type="radio" name="color" id="color-black" class="peer sr-only">
-                                <label for="color-black" class="block h-8 w-8 cursor-pointer rounded-full border-2 bg-black peer-checked:border-red-600"></label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="text-sm font-medium">Kích thước:</label>
-                        <div class="mt-2 flex gap-2">
-                            <div class="relative">
-                                <input type="radio" name="size" id="size-s" class="peer sr-only" checked>
-                                <label for="size-s" class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md border peer-checked:border-red-600 peer-checked:bg-red-50">S</label>
-                            </div>
-                            <div class="relative">
-                                <input type="radio" name="size" id="size-m" class="peer sr-only">
-                                <label for="size-m" class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md border peer-checked:border-red-600 peer-checked:bg-red-50">M</label>
-                            </div>
-                            <div class="relative">
-                                <input type="radio" name="size" id="size-l" class="peer sr-only">
-                                <label for="size-l" class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md border peer-checked:border-red-600 peer-checked:bg-red-50">L</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="text-sm font-medium">Số lượng:</label>
-                        <div class="mt-2 flex w-fit items-center rounded-md border">
-                            <button class="p-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M5 12h14"/></svg>
-                            </button>
-                            <span class="w-12 text-center">1</span>
-                            <button class="p-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid gap-4 pt-4">
-                    <button class="w-full rounded-md border border-red-600 bg-white px-4 py-2 text-red-600 hover:bg-red-50">
-                        Thêm vào giỏ
-                    </button>
-                    <button class="w-full rounded-md bg-[#ffd700] px-4 py-2 text-black hover:bg-[#ffd700]/90">
-                        Mua ngay
-                    </button>
-                </div>
-
-                <div class="mt-4 grid gap-2">
-                    <div class="flex items-center gap-2 text-sm">
-                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <span>Đảm bảo thanh toán an toàn và bảo mật</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-sm">
-                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span>Miễn phí vận chuyển: Đơn hàng từ 498k</span>
-                    </div>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity(-1)">-</button>
+                    <input type="text" value="23" id="quantity" readonly>
+                    <button onclick="updateQuantity(1)">+</button>
                 </div>
             </div>
         </div>
+
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Tổng giá trị sản phẩm</span>
+                <span>8.718.150 đ</span>
+            </div>
+            <div class="summary-row">
+                <span>Vận chuyển</span>
+                <span>20.000 đ</span>
+            </div>
+            <div class="summary-row">
+                <span>Giảm giá vận chuyển</span>
+                <span class="discount">-20.000 đ</span>
+            </div>
+            <div class="summary-row">
+                <strong>Tổng thanh toán</strong>
+                <strong>8.718.150 đ</strong>
+            </div>
+            <div class="savings">Bạn đã tiết kiệm được 478.850 đ</div>
+            
+            <button class="checkout-button">Mua hàng (23)</button>
+        </div>
+
+        <div class="payment-methods">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/f/fe/ZaloPay_Logo.png" alt="ZaloPay">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="MasterCard">
+            <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Icon-VNPAY-QR.png" alt="VNPay">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png" alt="MoMo">
+        </div>
     </div>
+
+    <script src="cart.js">
+    </script>
 </body>
 </html>
